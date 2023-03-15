@@ -79,12 +79,12 @@ const headerRow = [
       },
   ];
   
-const con =mysql.createConnection({
+/*const con =mysql.createConnection({
     host : 'localhost',
     user : 'root',
     password : '1234',
     database : 'express_db'
-});
+});*/
 
 con.connect(function(err){
     if(err) throw err;
@@ -149,16 +149,17 @@ app.post('/', (req, res, next) => {
  
 
     form.on('close', () => {
-        var i=2;
+        var i=0;
         var bnoList = [];
         var bno = '';
+        console.log(resData)
         while(true){
             
 
             if(i == resData.data.length-1){
                 break;
             }else{
-                bno = (resData.data[i].__EMPTY_2).replaceAll('-','');
+                bno = (resData.data[i].등록번호).replaceAll('-','');
                 bnoList.push(bno)
             }
             i++;
