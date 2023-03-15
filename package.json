@@ -39,6 +39,7 @@
     "eject": "react-scripts eject",
     "dev": "nodemon server.js"
   },
+  "homepage":"https://glittering-cheesecake-5fd53c.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
