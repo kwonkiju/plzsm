@@ -86,10 +86,10 @@ const headerRow = [
     database : 'express_db'
 });*/
 
-con.connect(function(err){
+/*con.connect(function(err){
     if(err) throw err;
     console.log('connected!')
-})
+})*/
 var sql = 'select * from todolist';
 
 app.use(bodyParser.json());
